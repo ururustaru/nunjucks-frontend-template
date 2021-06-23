@@ -1,0 +1,21 @@
+@charset "utf-8";
+
+// libraries
+@import "~@fancyapps/fancybox/dist/jquery.fancybox.css";
+
+// global styles
+@import "base/reset";  
+@import "base/variables";
+@import "base/mixins";  
+@import "base/fonts";
+@import "base/scaffolding"; 
+@import "base/page";
+@import "base/upages";
+
+// components
+@import "../components/example/example"; 
+@import "../components/footer/footer";
+@import "../components/form/form";
+@import "../components/header/header";
+
+

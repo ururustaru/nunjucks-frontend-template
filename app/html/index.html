@@ -1,0 +1,19 @@
+{% extends "default.html" %}
+{% set bodyClass = 'index' %}
+{% set pageTitle = 'Главная страница' %}
+{% set pageDescription = 'Описание страницы' %}
+
+{% from "example/example.html" import example %}
+
+{% block content %}
+    {{ example({
+        setting: '12345'
+    })}}
+
+    <div>
+        <h1>Пример загрузки данных и data.json:</h1>
+        {% for color in colors %}
+            <span class="b-product-colors__item-title">{{ color }}</span>
+        {% endfor %}
+    </div>
+{% endblock %} 

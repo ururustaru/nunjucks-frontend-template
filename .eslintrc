@@ -1,0 +1,15 @@
+{
+  "env": {
+    "browser": true,
+    "jquery": true,
+    "es6" : true
+  },
+  "plugins": [
+  ],
+  "globals": {
+    "autosize": true
+  },
+  "extends": "eslint:recommended",
+  "rules": {
+  }
+}

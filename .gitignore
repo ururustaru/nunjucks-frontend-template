@@ -1,0 +1,11 @@
+backup/
+bower_components/
+node_modules/
+Thumbs.db
+psd/
+psd-screens/
+sources/
+app/maps/
+build/
+*.sublime*
+.idea

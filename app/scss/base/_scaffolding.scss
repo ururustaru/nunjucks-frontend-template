@@ -1,0 +1,87 @@
+html {
+    box-sizing: border-box;
+}
+
+// Экспериментально для отмены проскролла на элементах форм в iOS Safari
+@media (max-width: 600px) {
+    html {
+        height: 100%;
+        overflow: scroll;
+        -webkit-overflow-scrolling: touch;
+    }
+}
+
+//----------------------------------------------------------------------
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+img.lazy {
+    transition: 0s;
+}
+
+img.lazy[data-src] {
+    opacity: 0;
+}
+
+body {
+    font-family: $main-font;
+    color: $text-color;
+    font-size: 16px;
+    background: url(../images/paint-bg-pattern.jpg) repeat;
+} 
+
+body.compensate-for-scrollbar {
+    margin: 0 !important;
+}
+
+a {
+    text-decoration: none;
+    color: $accent;
+    transition: 0.3s;
+    
+    &:hover {
+        color: $accent-hover;
+    }
+}
+
+button {
+    transition: 0.3s;
+}
+
+input,
+select,
+textarea {
+    -webkit-appearance: none;
+}
+
+.container {
+    @include container;
+}
+
+.visually-hidden {
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    position: absolute;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.hidden {
+    display: none;
+}
+
+.invisible {
+    visibility: hidden;
+}

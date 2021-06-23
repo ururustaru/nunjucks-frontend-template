@@ -1,0 +1,93 @@
+// Стили для IE
+@mixin ie11() {
+    @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+        @content
+    }
+}
+
+// Миксин для предотвращения схлопывания float-элементов
+@mixin clearfix {
+	&::after {
+		content: "";
+		display: table;
+		clear: both;
+	}
+}
+
+// Миксин для кроссбраузерной стилизации placeholder
+@mixin input-placeholder {
+	&.placeholder { @content; }
+	&:-moz-placeholder { @content; }
+	&::-moz-placeholder { @content; }
+	&:-ms-input-placeholder { @content; }
+	&::-webkit-input-placeholder { @content; }
+}
+
+// Миксин для подчеркивания элемента с background-image (dashed)
+@mixin dashed-underline($gradient) {
+	background-image: $gradient;
+	background-size: 10px 1px;
+	background-repeat: repeat-x;
+	background-position: center 100%;
+}
+
+// Миксин для подчеркивания элемента с background-image (solid)
+@mixin underline($color...) {
+	background-image: linear-gradient(to right, $color, $color);
+	background-size: 1px 1px;
+	background-repeat: repeat-x;
+	background-position: 0 100%;
+}
+
+// Миксин для подчеркивания элемента с background-image (градиент)
+@mixin gradient-underline($gradient) {
+	background-image: $gradient;
+	background-size: 100% 1px;
+	background-repeat: no-repeat;
+	background-position: center 100%;
+}
+
+// Миксин для ограничения контейнера блока
+@mixin container {
+	width: 100%;
+	max-width: 978px;
+	margin: 0 auto;
+	box-sizing: border-box;
+}
+
+// Миксин задания градиента тексту
+@mixin text-gradient($gradient) {
+	background-image: $gradient; /* Standard syntax; must be last */
+	color: transparent;
+	-webkit-background-clip: text;
+	background-clip: text;
+}
+
+// Миксины медиавыражений
+@mixin up($res) {
+    @media screen and (min-width: $res) {
+        @content;
+    }
+}
+@mixin down($res) {
+    @media screen and (max-width: $res) {
+        @content;
+    }
+}
+
+// Кастомный скроллбар
+@mixin scrollbar {
+    &::-webkit-scrollbar {
+        width: 8px
+    }
+    &::-webkit-scrollbar-track {
+        background: #EBEBEB
+    }
+    &::-webkit-scrollbar-thumb {
+        background: $blue;
+        border-radius: 10px
+    }
+    &::-webkit-scrollbar-thumb:hover {
+        background: $blue
+    }
+}

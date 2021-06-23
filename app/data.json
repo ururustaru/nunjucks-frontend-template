@@ -1,0 +1,439 @@
+{
+    "letters": {
+        "en": [
+            "A",
+            "B",
+            "C",
+            "D",
+            "E",
+            "F",
+            "G",
+            "H",
+            "I",
+            "J",
+            "K",
+            "L",
+            "M",
+            "N",
+            "O",
+            "P",
+            "Q",
+            "R",
+            "S",
+            "T",
+            "U",
+            "V",
+            "W",
+            "X",
+            "Y",
+            "Z"
+        ],
+        "ru": [
+            "А",
+            "Б",
+            "В",
+            "Г",
+            "Д",
+            "Е",
+            "Ё",
+            "Ж",
+            "З",
+            "И",
+            "Й",
+            "К",
+            "Л",
+            "М",
+            "Н",
+            "О",
+            "П",
+            "Р",
+            "С",
+            "Т",
+            "У",
+            "Ф",
+            "Х",
+            "Ц",
+            "Ч",
+            "Ш",
+            "Щ",
+            "Ъ",
+            "Ы",
+            "Ь",
+            "Э",
+            "Ю",
+            "Я"
+        ]
+    },
+    "sities": [
+        "Москва",
+        "Санкт-Петербург",
+        "Екатеринбург",
+        "Киев",
+        "Севастополь",
+        "Минск",
+        "Бобруйск"
+    ],
+    "brandsList": [
+        "Adamex",
+        "Air Baby",
+        "Amalfy",
+        "Anex",
+        "Aprica",
+        "Baby Italia",
+        "BabyActive",
+        "BabyOK",
+        "BabySleep",
+        "Babyzen",
+        "Bambolina",
+        "BeBe-mobile",
+        "Bebecar",
+        "Beleduc",
+        "Big",
+        "Brestil",
+        "Briciola",
+        "Britax",
+        "Britax Römer",
+        "Bruder",
+        "Bumbleride",
+        "CAM",
+        "Camarelo",
+        "Ceba Baby",
+        "Chicco",
+        "Chillafish",
+        "Concord",
+        "Cosmic Zoo",
+        "Cozy",
+        "Cybex",
+        "Dickie",
+        "Doona",
+        "DorJan",
+        "DPG",
+        "Dr. Brown",
+        "Dsland",
+        "EasyGo",
+        "Ecoiffier",
+        "Eichhorn",
+        "El-Jot",
+        "Esspero",
+        "Everflo",
+        "Expander",
+        "Felice",
+        "Feretti",
+        "Fiorellino",
+        "Flipper",
+        "Foppapedretti",
+        "GB",
+        "Geoby",
+        "Giovanni",
+        "Global Kids",
+        "Globex",
+        "GulSara",
+        "Gusio",
+        "Happy Baby",
+        "Hartan",
+        "Hauck",
+        "I’coo",
+        "ImseVimse",
+        "ImseVimse",
+        "Inglesina",
+        "Maclaren",
+        "Majorette",
+        "Makaby",
+        "Makkaroni Kids",
+        "Maxi-Cosi",
+        "Merries",
+        "Mibb",
+        "Micuna",
+        "Mima",
+        "Mutsy",
+        "Nastella",
+        "Noordi",
+        "NoordLine",
+        "Nuna",
+        "Papaloni",
+        "Peg Perego",
+        "Perina",
+        "Philips",
+        "Plaudi",
+        "Playmobil",
+        "Plitex",
+        "Polmobil",
+        "Putti",
+        "R.BOT",
+        "Ramili Baby",
+        "Red River",
+        "Reindeer",
+        "Riko",
+        "River Auto",
+        "Roan",
+        "RoxBaby",
+        "Scoot&Ride",
+        "Silver Cross",
+        "Silverlit",
+        "Simba",
+        "Simplicity",
+        "Small Rider",
+        "Smoby",
+        "Sojan",
+        "Sonya Rose",
+        "Switel",
+        "Tako",
+        "Teamson",
+        "Teutonia",
+        "Tiny Love",
+        "Tutek",
+        "Tutis",
+        "Valco baby",
+        "Valle",
+        "Verdi",
+        "Vikalex",
+        "Welldon",
+        "Womar",
+        "Zekiwa",
+        "Zooper",
+        "Эко Бейби"
+    ],
+    "brands": {
+        "A": [
+            "Adamex",
+            "Air Baby",
+            "Amalfy",
+            "Anex",
+            "Aprica"
+        ],
+        "B": [
+            "Baby Italia",
+            "BabyActive",
+            "BabyOK",
+            "BabySleep",
+            "Babyzen",
+            "Bambolina",
+            "BeBe-mobile",
+            "Bebecar",
+            "Beleduc",
+            "Big",
+            "Brestil",
+            "Briciola",
+            "Britax",
+            "Britax Römer",
+            "Bruder",
+            "Bumbleride"
+        ],
+        "C": [
+            "CAM",
+            "Camarelo",
+            "Ceba Baby",
+            "Chicco",
+            "Chillafish",
+            "Concord",
+            "Cosmic Zoo",
+            "Cozy",
+            "Cybex"
+        ],
+        "D": [
+            "Dickie",
+            "Doona",
+            "DorJan",
+            "DPG",
+            "Dr. Brown",
+            "Dsland"
+        ],
+        "E": [
+            "EasyGo",
+            "Ecoiffier",
+            "Eichhorn",
+            "El-Jot",
+            "Esspero",
+            "Everflo",
+            "Expander"
+        ],
+        "F": [
+            "Felice",
+            "Feretti",
+            "Fiorellino",
+            "Flipper",
+            "Foppapedretti"
+        ],
+        "G": [
+            "GB",
+            "Geoby",
+            "Giovanni",
+            "Global Kids",
+            "Globex",
+            "GulSara",
+            "Gusio"
+        ],
+        "H": [
+            "Happy Baby ",
+            "Hartan",
+            "Hauck"
+        ],
+        "I": [
+            "I’coo",
+            "ImseVimse",
+            "ImseVimse",
+            "Inglesina"
+        ],
+        "J": [
+            "Jane"
+        ],
+        "K": [
+            "Kaiser"
+        ],
+        "M": [
+            "Maclaren",
+            "Majorette",
+            "Makaby",
+            "Makkaroni Kids",
+            "Maxi-Cosi",
+            "Merries",
+            "Mibb",
+            "Micuna",
+            "Mima",
+            "Mutsy"
+        ],
+        "N": [
+            "Nastella",
+            "Noordi",
+            "NoordLine",
+            "Nuna"
+        ],
+        "O": [
+            "Odenwalder"
+        ],
+        "P": [
+            "Papaloni",
+            "Peg Perego",
+            "Perina",
+            "Philips",
+            "Plaudi",
+            "Playmobil",
+            "Plitex",
+            "Polmobil",
+            "Putti"
+        ],
+        "Q": [
+            "Qu Aqua"
+        ],
+        "R": [
+            "R.BOT",
+            "Ramili Baby",
+            "Red River",
+            "Reindeer",
+            "Riko",
+            "River Auto",
+            "Roan",
+            "RoxBaby"
+        ],
+        "S": [
+            "Scoot&Ride",
+            "Silver Cross",
+            "Silverlit",
+            "Simba",
+            "Simplicity",
+            "Small Rider",
+            "Smoby",
+            "Sojan",
+            "Sonya Rose",
+            "Switel"
+        ],
+        "T": [
+            "Tako",
+            "Teamson",
+            "Teutonia",
+            "Tiny Love",
+            "Tutek",
+            "Tutis"
+        ],
+        "V": [
+            "Valco baby",
+            "Valle",
+            "Verdi",
+            "Vikalex"
+        ],
+        "W": [
+            "Welldon",
+            "Womar"
+        ],
+        "X": [
+            "X-Lander  "
+        ],
+        "Z": [
+            "Zekiwa",
+            "Zooper"
+        ],
+        "А": [
+            "Афалина"
+        ],
+        "Г": [
+            "Гандылян"
+        ],
+        "Д": [
+            "Дэми"
+        ],
+        "З": [
+            "Золотой Гусь"
+        ],
+        "К": [
+            "Кубаньлесстрой"
+        ],
+        "Л": [
+            "Ланс Элин"
+        ],
+        "М": [
+            "Можга"
+        ],
+        "О": [
+            "Островок уюта"
+        ],
+        "П": [
+            "Промтекс"
+        ],
+        "Р": [
+            "Россия"
+        ],
+        "С": [
+            "Сдобина"
+        ],
+        "Э": [
+            "Эко Бейби"
+        ]
+    },
+    "categories": [
+        "Детские коляски",
+        "Детские кроватки",
+        "Все для кроватки",
+        "Детская мебель",
+        "Детские конверты, пеленки",
+        "Манежи и барьеры",
+        "Автокресла",
+        "Стульчики для кормления",
+        "Качели и шезлонги",
+        "Детские велосипеды",
+        "Детские санки"
+    ],
+    "colors": [
+        "Ca22 коричневый узор- бежевый sfsdfsdfsdf",
+        "Ca03 графит+цв.елочки",
+        "Ca28",
+        "Ca31 т.синий узор+синий",
+        "Ca29",
+        "Ca01 беж+цв.елочки",
+        "Ca02 тем.синий+син.леопард",
+        "Ca04 беж+св.беж",
+        "Ca05 графит+бирюза",
+        "Ca06 графит+салат",
+        "Ca09 беж+св.беж-ромб",
+        "Ca10 песочный+беж.узор",
+        "Ca11 графит+св.серый-узор",
+        "Ca13 белый+синий-узор",
+        "Ca20",
+        "Ca21",
+        "Ca24",
+        "Ca 26",
+        "Ca27",
+        "Ca22 коричневый узор- бежевый",
+        "Ca25 графит-узор серый",
+        "Ca30 фиолетовый-узор сиреневый"
+    ]
+}

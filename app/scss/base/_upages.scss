@@ -1,0 +1,37 @@
+// Стили для списка ссылок (dev)
+.upages {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.20);
+  z-index: 99;
+  background: #fff;
+  color: #000;
+  border-radius: 6px;
+
+  div {
+    text-align: right;
+    font-size: 14px;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+
+  a {
+    display: block;
+    color: #000;
+    font-size: 14px;
+    padding: 6px 8px;
+
+    &:nth-child(even) {
+      background: #e4e4e4;
+
+      &:hover {
+        background: #c1c1c1;
+      }
+    }
+
+    &:hover {
+      background: #c1c1c1;
+    }
+  }
+}

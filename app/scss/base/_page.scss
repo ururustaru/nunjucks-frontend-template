@@ -1,0 +1,19 @@
+
+.page {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.page__inner {
+    @include container;
+    flex-grow: 1;
+    box-shadow: $wrapper-shadow;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+}
+
+.page__content {
+    flex-grow: 1;
+}

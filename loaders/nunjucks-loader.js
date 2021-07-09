@@ -57,12 +57,13 @@ module.exports = function (content) {
 
     var nunjEnv = new nunjucks.Environment(loader);
     nunjucks.configure(null, { watch: false });
+    nunjEnv.addFilter('unique', arr => arr instanceof Array && arr.filter((e, i, arr) => arr.indexOf(e) == i) || arr);
 
     var template = nunjucks.compile(content, nunjEnv);
     template.render(this.query.context, function (err, res) {
         if (err) {
-            process.stderr.write('\007')
-            console.log(err)
+            process.stderr.write('\007');
+            console.log(err);
             callback(null, JSON.stringify(err));
         } else {
             callback(null, res);

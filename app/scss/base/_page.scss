@@ -9,7 +9,7 @@
     @include container;
     flex-grow: 1;
     box-shadow: $wrapper-shadow;
-    background: #fff;
+    background: $background;
     display: flex;
     flex-direction: column;
 }

@@ -1,10 +1,10 @@
 {
-  "name": "Elac-Russia",
+  "name": "Yelizarov.school",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "cross-env NODE_ENV=development SITE=false webpack-dev-server --hot",
+    "dev": "cross-env NODE_ENV=development SITE=false webpack-dev-server --hot",
     "build": "cross-env NODE_ENV=production SITE=false webpack --progress"
   },
   "keywords": [],
@@ -42,14 +42,10 @@
   },
   "browserslist": "last 2 versions",
   "dependencies": {
-    "@fancyapps/fancybox": "^3.5.7",
+    "@fancyapps/ui": "^5.0.22",
     "axios": "^0.21.1",
     "express": "^4.16.3",
-    "formbouncerjs": "^1.4.6",
-    "jquery": "^3.5.1",
-    "jquery-mask-plugin": "^1.14.16",
-    "lodash": "^4.17.20",
-    "npm": "^5.10.0",
-    "svgxuse": "^1.2.6"
+    "smooth-scrollbar": "^8.8.4",
+    "wowjs": "^1.1.3"
   }
 }

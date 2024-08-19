@@ -1,9 +1,10 @@
 @charset "utf-8";
 
 // libraries
-@import "~@fancyapps/fancybox/dist/jquery.fancybox.css";
+@import '~@fancyapps/ui/dist/fancybox/fancybox.css';
 
 // global styles
+@import "base/animations";
 @import "base/reset";  
 @import "base/variables";
 @import "base/mixins";  
@@ -13,9 +14,17 @@
 @import "base/upages";
 
 // components
-@import "../components/example/example"; 
-@import "../components/footer/footer";
-@import "../components/form/form";
-@import "../components/header/header";
+@import "../components/article/article";
+@import "../components/blog/blog";
+@import "../components/contacts/contacts";
+@import "../components/features/features";
+@import "../components/history/history";
+@import "../components/info/info";
+@import "../components/intro/intro";
+@import "../components/quote/quote";
+@import "../components/school-item/school-item";
+@import "../components/schools/schools";
+@import "../components/section/section";
+@import "../components/teacher/teacher";
 
 

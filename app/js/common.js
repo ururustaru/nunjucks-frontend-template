@@ -1,36 +1,20 @@
-import * as constants from 'constants';
+import { Fancybox } from '@fancyapps/ui';
 
-
-$(document).ready(function() {
-    
-    // Настройки галерей fancybox
-    $.fancybox.defaults.lang = "ru";
-    $.fancybox.defaults.i18n = {
-        ru: {
-            CLOSE: "Закрыть",
-            NEXT: "Далее",
-            PREV: "Назад",
-            ERROR: "Контент не может быть загружен. <br/> Попробуйте позже.",
-            PLAY_START: "Слайдшоу",
-            PLAY_STOP: "Остановить слайдшоу",
-            FULL_SCREEN: "На весь экран",
-            THUMBS: "Превью",
-            DOWNLOAD: "Скачать",
-            SHARE: "Поделиться",
-            ZOOM: "Увеличить"
+document.addEventListener('DOMContentLoaded', function(event) {
+  if (Fancybox) {
+    Fancybox.bind('[data-fancybox]', {
+      Toolbar: {
+        display: {
+          left: [ 'infobar' ],
+          middle: [],
+          right: [ 'iterateZoom', 'close' ]
         }
-    };
-    $.fancybox.defaults.buttons = [
-        "slideShow",
-        "thumbs",
-        "close",
-        // "zoom",
-        //"fullScreen",
-        //"share",
-    ];
-    
-    
-    // Маска для инпутов телефона (js_phone-input)
-    $('.js_phone-field').mask('+7 (000) 000-00-00');
+      }
+    });
+  };
+
+  if (WOW) {
+    new WOW().init();
+  }
 });
 

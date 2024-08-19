@@ -1,87 +1,123 @@
 html {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 // Экспериментально для отмены проскролла на элементах форм в iOS Safari
 @media (max-width: 600px) {
-    html {
-        height: 100%;
-        overflow: scroll;
-        -webkit-overflow-scrolling: touch;
-    }
+  html {
+    height: 100%;
+    overflow: scroll;
+    -webkit-overflow-scrolling: touch;
+  }
 }
 
 //----------------------------------------------------------------------
 
 *, *::before, *::after {
-    box-sizing: inherit;
+  box-sizing: inherit;
 }
 
 img {
-    display: block;
-    max-width: 100%;
-    height: auto;
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 img.lazy {
-    transition: 0s;
+  transition: 0s;
 }
 
 img.lazy[data-src] {
-    opacity: 0;
+  opacity: 0;
 }
 
 body {
-    font-family: $main-font;
-    color: $text-color;
-    font-size: 16px;
-    background: url(../images/paint-bg-pattern.jpg) repeat;
-} 
+  font-family: $font-main;
+  color: $text-color;
+  font-size: 16px;
+  background: $background;
+  font-weight: 300;
+}
 
 body.compensate-for-scrollbar {
-    margin: 0 !important;
+  margin: 0 !important;
 }
 
 a {
-    text-decoration: none;
-    color: $accent;
-    transition: 0.3s;
-    
-    &:hover {
-        color: $accent-hover;
-    }
+  text-decoration: none;
+  color: $accent;
+  transition: 0.3s;
 }
 
-button {
-    transition: 0.3s;
+button, path, circle, svg {
+  transition: 0.3s;
 }
 
 input,
 select,
 textarea {
-    -webkit-appearance: none;
+  -webkit-appearance: none;
 }
 
 .container {
-    @include container;
+  @include container;
 }
 
 .visually-hidden {
-    clip: rect(0 0 0 0);
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-    position: absolute;
-    white-space: nowrap;
-    overflow: hidden;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 .hidden {
-    display: none;
+  display: none;
 }
 
 .invisible {
-    visibility: hidden;
+  visibility: hidden;
+}
+
+.wow {
+  visibility: hidden;
+}
+
+/*video::-webkit-media-controls-timeline,
+video::-webkit-media-controls-panel {
+  display: none;
+}*/
+
+.phone-float {
+  display: flex;
+  padding: 5px 25px;
+  border-radius: 18px;
+  background: #8e7deb;
+  box-shadow: 0 12px 55px -10px #531CC5;
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  z-index: 10;
+  animation: shadow-pulse 2s infinite;
+  
+  svg {
+    width: 40px;
+  }
+}
+
+@include down(1199px) {
+  .phone-float {
+    padding: 14px 20px;
+    bottom: 15px;
+    right: 20px;
+    
+    svg {
+      width: 30px;
+      height: 30px;
+    }
+  }
 }

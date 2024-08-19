@@ -9,26 +9,37 @@
         <meta name="description" content="{{ pageDescription }}"/>
         <link rel="stylesheet" href="app.css">
 
-        {% include "../blocks/partials/favicon.html" %}   
+        {% include "../blocks/partials/favicon.html" %}
+
+        <!-- Yandex.Metrika counter -->
+        <script type="text/javascript" >
+            (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+                m[i].l=1*new Date();
+                for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+                k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+            (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+            ym(95139490, "init", {
+                clickmap:true,
+                trackLinks:true,
+                accurateTrackBounce:true,
+                webvisor:true
+            });
+        </script>
+        <noscript><div><img src="https://mc.yandex.ru/watch/95139490" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+        <!-- /Yandex.Metrika counter -->
     </head>
 
     <body class="page page--{{ bodyClass }}">
 
         <div class="page__inner">
-            {% block header %}
-                {% include "../components/header/header.html" %}
-            {% endblock %}
-
             <div class="page__content">
                 {% block content %}{% endblock %}
             </div>
-
-            {% block footer %}
-                {% include "../components/footer/footer.html" %}
-            {% endblock %}
         </div>
 
         <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
         <script src="app.js"></script>
     </body>
 </html>

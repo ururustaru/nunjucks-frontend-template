@@ -1,12 +1,8 @@
-// Бибилотеки
-require("@fancyapps/fancybox"); // модальные окна fancybox
-require("jquery-mask-plugin"); // маски полей ввода
-
 // Общие скрипты
-import "./js/common"
+import './js/common'
 
 // Компоненты
-import "./components/form/form";
+// import './components/blog/blog';
 
 // Ссылки на страницы (Dev)
-import('./dinamic-links');
+import('./dynamic-links');

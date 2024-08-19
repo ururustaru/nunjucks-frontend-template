@@ -1,0 +1,152 @@
+.blog {
+  display: flex;
+  flex-direction: column;
+  
+  &.section {
+    padding-top: 20px;
+  }
+}
+
+.blog__stage {
+  display: flex;
+  gap: 25px;
+  margin-bottom: 20px;
+}
+
+.blog__item {
+  max-width: 300px;
+  width: 25%;
+}
+
+.blog__item-image {
+  width: 300px;
+  height: 300px;
+  box-shadow: $card-shadow;
+  border-radius: 15px;
+  overflow: hidden;
+  position: relative;
+}
+
+.blog__item-image-wrap {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  
+  img {
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.blog__item-stats {
+  position: absolute;
+  border-radius: 15px 0px;
+  background: rgba(24, 10, 66, 0.80);
+  bottom: 0;
+  right: 0;
+  padding: 12px 16px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.blog__item-image-placeholder {
+  color: #422a74;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.blog__item-likes {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.blog__item-reposts {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.blog__item-text {
+  position: relative;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+  line-height: 1.4;
+  margin-top: 12px;
+  font-size: 14px;
+}
+
+.blog__more-btn {
+  display: inline-flex;
+  align-self: center;
+  align-items: center;
+  justify-content: center;
+  margin: 40px auto;
+  padding: 26px 40px;
+  color: #DCCFFF;
+  border-radius: 15px;
+  background: #3A246F;
+  box-shadow: 0px 24px 70px -10px rgba(76, 43, 143, 0.50);
+  gap: 15px;
+  font-size: 18px;
+  line-height: 1.3;
+  text-align: center;
+  
+  &:hover {
+    box-shadow: 0px 24px 70px -10px rgba(140, 84, 255, 0.50);
+  }
+}
+
+.blog__social {
+  margin-top: -20px;
+  display: flex;
+  justify-content: center;
+  
+  .blog__more-btn {
+    margin: 20px;
+    width: 300px;
+    max-width: 100%;
+    padding: 17px 40px;
+  }
+}
+
+.blog__item-image {
+  width: 100%;
+}
+
+@include down(1199px) {
+  .blog__stage {
+    flex-direction: column;
+    align-items: center;
+    gap: 35px;
+  }
+  
+  .blog__item {
+    width: 100%;
+    max-width: unset;
+    
+    img {
+      width: 100%;
+    }
+  }
+  
+  .blog__more-btn {
+    flex-direction: column;
+  }
+
+  .blog__social {
+    flex-direction: column; 
+    gap: 20px;
+    margin-bottom: 20px;
+    
+    .blog__more-btn {
+      margin: 0;
+      width: 100%;
+    }
+  }
+}

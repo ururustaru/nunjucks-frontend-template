@@ -1,0 +1,44 @@
+.school-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  width: 500px;
+  max-width: 100%;
+}
+
+.school-item__address {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.school-item__phone {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: $accent;
+  font-size: 16px;
+  margin-bottom: 20px;
+  
+  &:hover {
+    text-shadow: $link-glow;
+  }
+}
+
+.school-item__video {
+  border-radius: 15px;
+  box-shadow: $card-shadow;
+  overflow: hidden;
+  cursor: pointer;
+  
+  video {
+    object-fit: cover;
+  }
+  
+  
+}
+
+.school-item:nth-child(3) {
+  video {
+    object-position: bottom;
+  }
+}

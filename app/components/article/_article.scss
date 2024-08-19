@@ -1,0 +1,23 @@
+.article {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.4;
+  
+  p {
+    margin-bottom: 22px;
+  }
+  
+  b, strong {
+    font-weight: 600;
+  }
+}
+
+@include down(1199px) {
+  .article {
+    font-size: 14px;
+
+    p {
+      margin-bottom: 20px;
+    }
+  }
+}

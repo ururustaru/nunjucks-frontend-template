@@ -1,0 +1,59 @@
+.schools {
+  position: relative;
+  
+  &:before {
+    content: '';
+    position: absolute;
+    height: 1000px;
+    width: 100%;
+    background: linear-gradient(180deg, #141631 0%, rgba(35, 17, 72, 0.00) 100%);
+    top: 0;
+    left: 0;
+    z-index: 0;
+  }
+  
+  & > * {
+    position: relative;
+  }
+}
+
+.schools__grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 60px;
+}
+
+.schools__map {
+  overflow: hidden;
+  border-radius: 15px;
+}
+
+@include down(1199px) {
+  .schools__map {
+    iframe {
+      max-height: 50dvh; 
+    }
+  }
+
+  .schools__grid {
+    gap: 35px;
+  }
+
+  .school-item__address {
+    font-size: 16px;
+  }
+  
+  .school-item__phone {
+    font-size: 14px;
+    margin-bottom: 14px;
+  }
+  
+  .school-item__video {
+    video {
+      width: 100%;
+      height: auto;
+      aspect-ratio: 1 / 1;
+    }
+  }
+}

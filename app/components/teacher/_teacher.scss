@@ -1,0 +1,165 @@
+.teacher {
+  &--mikhailova,
+  &--ivanova {
+    .teacher__gallery img {
+      display: none;
+    }
+  }
+}
+
+.teacher__grid {
+  display: flex;
+  align-items: flex-start;
+  gap: 30px;
+  padding-bottom: 40px;
+  border-bottom: 3px solid #2a1456;
+  border-radius: 3px;
+  margin-bottom: 40px;
+}
+
+.teacher:last-of-type .teacher__grid {
+  margin-bottom: 0;
+  border: 0;
+  padding-bottom: 0;
+}
+
+.teacher__photo {
+  margin-bottom: -2px;
+  overflow: hidden;
+  border-radius: 15px 15px 0 0;
+  position: relative;
+  
+  &:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, rgba(30, 20, 66, 0.00) 60.93%, #1E1442 100%);
+    border-radius: 0;
+  }
+  
+  img {
+    position: relative;
+    top: 1px;
+  }
+}
+
+.teacher__gallery {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.teacher__info {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  flex-grow: 1;
+  flex-shrink: 100000000;
+}
+
+.teacher__name {
+  font-family: $font-title;
+  font-size: 22px;
+  font-weight: 400;
+}
+
+.teacher__styles {
+  font-family: $font-title;
+  font-size: 18px;
+}
+
+.teacher__section-title {
+  font-family: $font-title;
+  font-size: 18px;
+  margin-bottom: 15px;
+  display: block;
+}
+
+.teacher__section-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.teacher__section-item {
+  padding-left: 20px;
+  font-size: 16px;
+  position: relative;
+  line-height: 1.4;
+  
+  &:before {
+    content: '';
+    width: 26px;
+    height: 26px;
+    background: url("../images/dot-glow.png") center / contain no-repeat;
+    position: absolute;
+    left: -6px;
+    top: 0px;
+  }
+}
+
+.teacher__section-item--no-dot {
+  padding-left: 0;
+  
+  &:before {
+    display: none;
+  }
+}
+
+@include down(1400px) {
+  .teacher__gallery {
+    gap: 20px;
+    
+    img {
+      max-width: 300px;
+    }
+  }
+}
+
+@include down(1199px) {
+  .teacher__grid {
+    flex-direction: column;
+  }
+  .teacher__info {
+    gap: 25px;
+    margin: 0 auto;
+  }
+  .teacher__photo {
+    width: 160px;
+    margin: 0 auto;
+  }
+  .teacher__name {
+    font-size: 18px;
+    text-align: center;
+  }
+  .teacher__styles {
+    font-size: 16px;
+    text-align: center;
+    margin-top: -12px;
+    margin-bottom: 5px;
+  }
+  .teacher__section-title {
+    text-align: center;
+    font-size: 16px;
+  }
+  .teacher__section-item {
+    font-size: 14px;
+    max-width: 300px;
+  }
+  .teacher__section-item--no-dot {
+    text-align: center;
+    margin-top: -5px;
+  }
+  .teacher__section-list {
+    gap: 10px;
+  }
+  .teacher__gallery {
+    margin: 0 auto;
+  }
+  .teacher__section {
+    margin: 0 auto;
+  }
+}

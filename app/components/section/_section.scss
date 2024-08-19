@@ -1,0 +1,46 @@
+.section {
+  padding: 60px 50px;
+  overflow-x: hidden;
+}
+
+.section__title {
+  font-size: 32px;
+  font-family: $font-title;
+  position: relative;
+  z-index: 2;
+}
+
+.section__slogan {
+  font-size: 52px;
+  color: $accent;
+  font-family: $font-decorative;
+  position: relative;
+  z-index: 1;
+  top: -7px;
+  left: 30px;
+  margin-bottom: 50px;
+  display: block;
+}
+
+@include down(1400px) {
+  .section {
+    padding: 50px 30px;
+  }
+}
+
+@include down(1199px) {
+  .section {
+    padding: 40px 15px;
+  }
+
+  .section__title {
+    font-size: 26px;
+  }
+  
+  .section__slogan {
+    font-size: 36px;
+    top: -5px;
+    left: 25px;
+    margin-bottom: 30px;
+  }
+}

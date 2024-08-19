@@ -1,0 +1,59 @@
+{% macro teacher(props) %}
+    <div class="teacher teacher--{{ props.id }}">
+        <div class="teacher__grid">
+            <div class="teacher__photo wow fadeInUp" data-wow-duration="1s" data-wow-delay="0s">
+                <img src="../images/teachers/{{ props.id }}.jpg" alt="{{ props.name }}">
+            </div>
+            
+            <div class="teacher__info">
+                <strong class="teacher__name wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.1s">{{ props.name 
+                    }}</strong>
+                <strong class="teacher__styles wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s">
+                    {% for style in props.styles %}{% if loop.index > 1 %}, {% endif %}{{ style }}{% endfor %}
+                </strong>
+                {% if props.groups[0] %}
+                    <div class="teacher__section">
+                        <h3 class="teacher__section-title wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.3s">Группы:</h3>
+                        <ul class="teacher__section-list">
+                            {% for group in props.groups %}
+                                <li class="teacher__section-item wow fadeInUp" data-wow-duration="1s" 
+                                    data-wow-delay="0.{{ loop.index + 4 }}s">{{ group }}</li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                {% endif %}
+                {% if props.addresses[0] %}
+                    <div class="teacher__section wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.4s">
+                        <h3 class="teacher__section-title">Где:</h3>
+                        <ul class="teacher__section-list">
+                            {% for address in props.addresses %}
+                                <li class="teacher__section-item teacher__section-item--no-dot">{{ address }}</li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                {% endif %}
+                {% if props.awards[0] %}
+                    <div class="teacher__section">
+                        <ul class="teacher__section-list">
+                            {% for award in props.awards %}
+                                <li class="teacher__section-item wow fadeInUp" data-wow-duration="1s"
+                                    data-wow-delay="0.{{ loop.index + 4 }}s">{{ award }}</li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                {% endif %}
+            </div>
+
+            <div class="teacher__gallery">
+                <a data-fancybox href="../images/gallery/{{ props.id }}1-big.jpg">
+                    <img src="../images/gallery/{{ props.id }}1.png" class="wow fadeInUp" data-wow-duration="1s"
+                        data-wow-delay="0.2s" alt="{{ props.name }}">
+                </a>
+                <a data-fancybox href="../images/gallery/{{ props.id }}2-big.jpg">
+                    <img src="../images/gallery/{{ props.id }}2.png" class="wow fadeInUp" data-wow-duration="1s"
+                        data-wow-delay="0.4s" alt="{{ props.name }}">
+                </a>
+            </div>
+        </div>
+    </div>
+{% endmacro %}

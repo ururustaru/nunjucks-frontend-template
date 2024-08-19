@@ -1,0 +1,28 @@
+.history {
+  &.section {
+    padding-top: 20px;
+  }
+}
+
+.history__article {
+  display: flex;
+  gap: 55px;
+}
+
+.history__article-image {
+  flex-grow: 1;
+  border-radius: 15px;
+  overflow: hidden;
+  min-width: 400px;
+}
+
+@include down(1199px) {
+  .history__article {
+    flex-direction: column-reverse;
+    gap: 20px;
+  }
+  .history__article-image {
+    min-width: unset;
+    width: 100%;
+  }
+}

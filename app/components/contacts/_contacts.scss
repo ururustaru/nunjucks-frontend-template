@@ -1,0 +1,42 @@
+.contacts {
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.contacts__phones {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.contacts__phone-item {
+  display: flex;
+  flex-direction: column;
+  font-size: 16px;
+  gap: 10px;
+  min-width: 200px;
+}
+
+.contacts__phone-title {
+  font-size: 16px;
+}
+
+.contacts__phone-value {
+  font-family: $font-title;
+  color: $accent;
+  font-weight: 400;
+
+  font-feature-settings: 'lnum' 1;
+  font-size: 16px;
+
+  &:hover {
+    text-shadow: 0 6px 20px rgba(235, 174, 125, 0.65);
+  }
+}
+
+@include down(1199px) {
+  .contacts__phones {
+    flex-direction: column;
+  }
+}

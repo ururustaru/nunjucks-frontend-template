@@ -1,0 +1,76 @@
+.quote {
+  background: #2F1E51;
+  padding: 20px 0 65px;
+}
+
+.quote__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.quote__line {
+  display: flex;
+  align-items: center;
+  
+  img:first-of-type {
+    position: relative;
+    top: 70px;
+  }
+
+  img:last-of-type {
+    position: relative;
+    top: -20px;
+  }
+}
+
+.quote__text {
+  color: $accent;
+  font-size: 70px;
+  font-family: $font-decorative;
+}
+
+
+.quote__author {
+  font-size: 24px;
+  font-family: $font-title;
+}
+
+@include down(1199px) {
+  .quote {
+    padding: 20px 30px;
+    margin-bottom: 30px;
+  }
+  .quote__text {
+    font-size: 45px;
+    line-height: 1;
+    max-width: 310px;
+  }
+  
+  .quote__line {
+    position: relative;
+    
+    img {
+      width: 100px;
+      height: 100px;
+      position: absolute !important;
+      
+      &:first-of-type {
+        left: -30px;
+        top: 120px;
+      }
+
+      &:last-of-type {
+        right: -30px;
+        top: -60px;
+      }
+    }
+  }
+  
+  .quote__author {
+    font-size: 20px;
+    margin-top: 30px;
+    text-align: right;
+    align-self: flex-end;
+  }
+}

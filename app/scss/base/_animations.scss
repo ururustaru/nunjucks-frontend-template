@@ -3637,11 +3637,11 @@
 
 @keyframes shadow-pulse {
   from {
-    box-shadow: 0 0 0 0px rgba(83, 28, 197, 0.8);
+    box-shadow: 0 0 0 0px rgba(83, 28, 197, 0.5);
   }
 
   to {
     visibility: hidden;
-    box-shadow: 0 0 0 45px rgba(0,0,0,0);
+    box-shadow: 0 0 0 20px rgba(0,0,0,0);
   }
 }

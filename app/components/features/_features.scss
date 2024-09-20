@@ -23,6 +23,8 @@
   transform: translateX(80px);
   font-size: 20px;
   margin-bottom: 30px;
+  transition: 0.3s;
+  cursor: pointer;
 
   &:before {
     content: '';
@@ -48,6 +50,10 @@
 
   &:nth-child(5) {
     margin-left: 120px;
+  }
+  
+  &:hover {
+    color: #EBAE7D;
   }
 }
 

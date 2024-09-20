@@ -1,1 +1,23 @@
 .info {}
+
+.info__btns {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+  
+  .blog__more-btn {
+    margin: 0;
+  }
+}
+
+
+@include down(768px) {
+  .info__btns {
+    gap: 20px;
+    
+    .blog__more-btn {
+      padding: 20px 40px;
+      width: 100%;
+    }
+  }
+}

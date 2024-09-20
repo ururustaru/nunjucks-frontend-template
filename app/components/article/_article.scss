@@ -3,8 +3,26 @@
   font-weight: 300;
   line-height: 1.4;
   
+  h2 {
+    font-size: 26px;
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+  
+  ul, ol {
+    margin-bottom: 22px;
+  }
+  
+  ul li {
+    list-style: disc inside;
+  }
+  
   p {
     margin-bottom: 22px;
+  }
+  
+  p + ol, p + ul {
+    margin-top: -10px;
   }
   
   b, strong {
